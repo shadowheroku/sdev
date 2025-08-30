@@ -63,6 +63,15 @@ top_global_groups_collection = db['gaming_global_groups']
 pm_users = db['gaming_pm_users']
 destination_collection = db['gamimg_user_collection']
 destination_char = db['gaming_anime_characters']
+# TEAMZYRO/__init__.py
+
+char_power = {
+    "Common": 10,
+    "Rare": 25,
+    "Epic": 50,
+    "Legendary": 100,
+    "Mythical": 200,
+}
 
 # -------------------------- GLOBAL VARIABLES ----------------------------
 app = ZYRO
