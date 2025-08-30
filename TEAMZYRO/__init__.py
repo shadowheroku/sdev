@@ -25,26 +25,26 @@ def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
 
 # ---------------------------- CONSTANTS ---------------------------------
-api_id = os.getenv("API_ID", "")  # Fetch from environment variable
-api_hash = os.getenv("API_HASH", "")   # Fetch from environment variable
+api_id = os.getenv("API_ID", "23212132")  # Fetch from environment variable
+api_hash = os.getenv("API_HASH", "1c17efa86bdef8f806ed70e81b473c20")   # Fetch from environment variable
 
-TOKEN = os.getenv("TOKEN")          # Fetch from environment variable
+TOKEN = os.getenv("TOKEN" ,"7465073735:AAGOgUfMB5SALpbw1dWkb-swU8latLqK8zc")          # Fetch from environment variable
 
-GLOG = os.getenv("GLOG", "HINATA_LOG_GC") # USERNAME ONLY
-CHARA_CHANNEL_ID = os.getenv("CHARA_CHANNEL_ID", "Zyro_arts") #USERNAME ONLY
-SUPPORT_CHAT_ID = os.getenv("SUPPORT_CHAT_ID", "-1002309742084") #USERNAME ONLY
+GLOG = os.getenv("GLOG", "moniclogs") # USERNAME ONLY
+CHARA_CHANNEL_ID = os.getenv("CHARA_CHANNEL_ID", "moniclogs") #USERNAME ONLY
+SUPPORT_CHAT_ID = os.getenv("SUPPORT_CHAT_ID", "moniclogs") #USERNAME ONLY
 
-mongo_url = os.getenv("MONGO_URL", "")  # Fetch from environment variable
+mongo_url = os.getenv("MONGO_URL", "mongodb+srv://ryumasgod:ryumasgod@cluster0.ojfkovp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # Fetch from environment variable
 PHOTO_URL = [
     os.getenv("PHOTO_URL_1", "https://files.catbox.moe/7ccoub.jpg"),
     os.getenv("PHOTO_URL_2", "https://files.catbox.moe/7ccoub.jpg")
 ]
 
-SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/TEAMZYRO")
-UPDATE_CHAT = os.getenv("UPDATE_CHAT", "https://t.me/ZyroBotCodes")
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/moniclogs")
+UPDATE_CHAT = os.getenv("UPDATE_CHAT", "https://t.me/moniclogs")
 
-SUDO = list(map(int, os.getenv("SUDO", "7577185215,5749187175").split(',')))
-OWNER_ID = int(os.getenv("OWNER_ID", "7638720582"))
+SUDO = list(map(int, os.getenv("SUDO", "8429156335").split(',')))
+OWNER_ID = int(os.getenv("OWNER_ID", "8429156335"))
 
 # --------------------- TELEGRAM BOT CONFIGURATION -----------------------
 command_filter = f.create(lambda _, __, message: message.text and message.text.startswith("/"))
