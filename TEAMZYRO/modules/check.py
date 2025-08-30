@@ -4,6 +4,8 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 import asyncio 
+power = char_power.get(character['rarity'], 0)
+text += f"⚡ Power: {power}\n"
 
 @app.on_message(filters.command("check"))
 async def check_character(client, message):
@@ -64,4 +66,5 @@ async def who_have_it(client, callback_query):
         caption=f"{callback_query.message.caption}\n\n{owner_text}",
         reply_markup=None
     )
+
 
